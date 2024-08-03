@@ -1,4 +1,4 @@
-const { getFilePath, readCorpusFile, writeCorpusFile, deleteCorpusFile } = require('../utils/fileHelper');
+const { getFilePath, readCorpusFile, writeCorpusFile, deleteCorpusFile } = require('../../utils/fileHelper');
 
 const createIntent = (req, res) => {
   const { language } = req.params;

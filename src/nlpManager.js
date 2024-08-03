@@ -8,7 +8,7 @@ const createNlpInstance = async () => {
 
   // Load corpus dynamically
   const loadCorpus = (language) => {
-    const corpusPath = path.join(__dirname, `./corpus/${language}`);
+    const corpusPath = path.join(__dirname, `../corpus/${language}`);
     const files = fs.readdirSync(corpusPath);
 
     for (const file of files) {
@@ -25,8 +25,8 @@ const createNlpInstance = async () => {
     }
   };
 
-  loadCorpus('english');
-  loadCorpus('indonesian');
+  loadCorpus('en');
+  loadCorpus('id');
 
   // Train and return the manager
   await manager.train();
