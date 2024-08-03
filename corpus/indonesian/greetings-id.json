@@ -1,0 +1,28 @@
+{
+    "intents": [
+      {
+        "intent": "greetings",
+        "examples": [
+          "Halo",
+          "Hai",
+          "Selamat pagi",
+          "Selamat siang",
+          "Selamat sore",
+          "Selamat malam",
+          "Apa kabar?",
+          "Apa yang sedang terjadi?"
+        ],
+        "responses": [
+          "Halo! Bagaimana saya bisa membantu Anda hari ini?",
+          "Hai! Apa yang bisa saya bantu?",
+          "Hai! Bagaimana saya bisa membantu Anda?",
+          "Selamat pagi! Ada yang bisa saya bantu hari ini?",
+          "Selamat siang! Ada yang bisa saya bantu?",
+          "Selamat sore! Bagaimana saya bisa membantu Anda?",
+          "Apa kabar? Ada yang bisa saya bantu?",
+          "Apa yang sedang terjadi? Bagaimana saya bisa membantu Anda?"
+        ]
+      }
+    ]
+  }
+  

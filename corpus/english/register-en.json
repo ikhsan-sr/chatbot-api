@@ -1,0 +1,23 @@
+{
+    "intents": [
+      {
+        "intent": "register",
+        "examples": [
+          "I want to register",
+          "Sign me up",
+          "How do I register?",
+          "I need to create an account",
+          "Register a new account",
+          "I want to sign up"
+        ],
+        "responses": [
+          "To register, please visit the registration page and fill out the required information.",
+          "You can sign up by clicking on the 'Register' button and entering your details.",
+          "To create a new account, go to the registration page and follow the instructions.",
+          "Visit the registration page to sign up for a new account.",
+          "Click 'Sign Up' to start the registration process."
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,23 @@
+{
+    "intents": [
+      {
+        "intent": "register",
+        "examples": [
+          "Saya ingin mendaftar",
+          "Daftarkan saya",
+          "Bagaimana cara mendaftar?",
+          "Saya perlu membuat akun",
+          "Daftarkan akun baru",
+          "Saya ingin mendaftar"
+        ],
+        "responses": [
+          "Untuk mendaftar, silakan kunjungi halaman pendaftaran dan isi informasi yang diperlukan.",
+          "Anda dapat mendaftar dengan mengklik tombol 'Daftar' dan memasukkan detail Anda.",
+          "Untuk membuat akun baru, pergi ke halaman pendaftaran dan ikuti instruksi.",
+          "Kunjungi halaman pendaftaran untuk mendaftar akun baru.",
+          "Klik 'Daftar' untuk memulai proses pendaftaran."
+        ]
+      }
+    ]
+  }
+  

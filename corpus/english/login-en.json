@@ -1,0 +1,23 @@
+{
+    "intents": [
+      {
+        "intent": "login",
+        "examples": [
+          "I want to log in",
+          "Log me in",
+          "I need to sign in",
+          "How do I log in?",
+          "What’s my login info?",
+          "I can’t log in"
+        ],
+        "responses": [
+          "Please enter your username and password to log in.",
+          "To log in, go to the login page and enter your credentials.",
+          "If you need to sign in, use the login form on our website.",
+          "For login assistance, visit the login page and follow the instructions.",
+          "If you can’t log in, make sure your credentials are correct or try resetting your password."
+        ]
+      }
+    ]
+  }
+  

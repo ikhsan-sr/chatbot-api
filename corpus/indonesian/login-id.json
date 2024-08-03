@@ -1,0 +1,23 @@
+{
+    "intents": [
+      {
+        "intent": "login",
+        "examples": [
+          "Saya ingin login",
+          "Masukkan saya",
+          "Saya perlu masuk",
+          "Bagaimana cara login?",
+          "Apa informasi login saya?",
+          "Saya tidak bisa login"
+        ],
+        "responses": [
+          "Silakan masukkan nama pengguna dan password Anda untuk login.",
+          "Untuk login, pergi ke halaman login dan masukkan kredensial Anda.",
+          "Jika Anda perlu masuk, gunakan formulir login di situs web kami.",
+          "Untuk bantuan login, kunjungi halaman login dan ikuti instruksi.",
+          "Jika Anda tidak bisa login, pastikan kredensial Anda benar atau coba reset password Anda."
+        ]
+      }
+    ]
+  }
+  
