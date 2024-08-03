@@ -1,14 +1,13 @@
 const express = require('express');
-const fs = require('fs');
-const path = require('path');
+const bodyParser = require('body-parser');
 const { createNlpInstance } = require('./nlpManager');
-const { detectLanguage } = require('./languageDetector');
+const corpusRoutes = require('./routes/corpus');
 
 const app = express();
 const port = 3000;
-const unansweredLogPath = path.join(__dirname, '../unanswered-questions.log');
 
-app.use(express.json());
+app.use(bodyParser.json());
+app.use('/corpus', corpusRoutes);
 
 (async () => {
   const nlp = await createNlpInstance();
@@ -18,14 +17,9 @@ app.use(express.json());
     const language = detectLanguage(message);
     const response = await nlp.process(language, message);
 
-    let reply = response.answer || (language === 'id'
+    const reply = response.answer || (language === 'id'
       ? "Maaf, saya tidak mengerti pertanyaan Anda. Bisakah Anda menanyakan dengan cara yang berbeda?"
       : "Sorry, I don't understand your question. Could you please ask in a different way?");
-
-    // Simpan pertanyaan yang tidak bisa dijawab ke dalam file log
-    if (!response.answer) {
-      fs.appendFileSync(unansweredLogPath, `${new Date().toISOString()} - ${language} - ${message}\n`);
-    }
 
     res.json({ reply });
   });
@@ -34,3 +28,8 @@ app.use(express.json());
     console.log(`Chat bot listening at http://localhost:${port}`);
   });
 })();
+
+function detectLanguage(message) {
+  // Implement your language detection logic here
+  return message.match(/[\u0400-\u04FF]/) ? 'id' : 'en';
+}
