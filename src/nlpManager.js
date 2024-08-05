@@ -4,7 +4,7 @@ const fs = require('fs');
 
 // Fungsi untuk membuat dan melatih model NLP
 const createNlpInstance = async () => {
-  const manager = new NlpManager({ languages: ['en', 'id'] });
+  const manager = new NlpManager({ languages: ['id', 'en'] });
 
   // Load corpus dynamically
   const loadCorpus = (language) => {
@@ -25,8 +25,8 @@ const createNlpInstance = async () => {
     }
   };
 
-  loadCorpus('en');
   loadCorpus('id');
+  loadCorpus('en');
 
   // Train and return the manager
   await manager.train();

@@ -31,5 +31,5 @@ app.use('/corpus', corpusRoutes);
 
 function detectLanguage(message) {
   // Implement your language detection logic here
-  return message.match(/[\u0400-\u04FF]/) ? 'id' : 'en';
+  return 'id'
 }

@@ -1,8 +1,8 @@
 {
   "settings": {
     "languages": [
-      "en",
-      "id"
+      "id",
+      "en"
     ],
     "tag": "nlp",
     "threshold": 0.5,
@@ -17,11 +17,687 @@
       "tag": "nlu-manager"
     },
     "locales": [
-      "en",
-      "id"
+      "id",
+      "en"
     ],
     "languageNames": {},
     "domainManagers": {
+      "id": {
+        "settings": {
+          "locale": "id",
+          "trainByDomain": false,
+          "tag": "domain-manager-id",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "lupa,password,saya": {
+            "intent": "forgot_password",
+            "domain": "default"
+          },
+          "ingat,password,saya,tidak": {
+            "intent": "forgot_password",
+            "domain": "default"
+          },
+          "password,reset,saya": {
+            "intent": "forgot_password",
+            "domain": "default"
+          },
+          "bagaimana,cara,password,reset": {
+            "intent": "forgot_password",
+            "domain": "default"
+          },
+          "bantu,dengan,password,perlu,saya": {
+            "intent": "forgot_password",
+            "domain": "default"
+          },
+          "fungsi,password,saya,tidak": {
+            "intent": "forgot_password",
+            "domain": "default"
+          },
+          "halo": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "hai": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "pagi,selamat": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "selamat,siang": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "selamat,sore": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "malam,selamat": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "apa,kabar": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "apa,jadi,sedang,yang": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "ingin,login,saya": {
+            "intent": "login",
+            "domain": "default"
+          },
+          "masuk,saya": {
+            "intent": "login",
+            "domain": "default"
+          },
+          "masuk,perlu,saya": {
+            "intent": "login",
+            "domain": "default"
+          },
+          "bagaimana,cara,login": {
+            "intent": "login",
+            "domain": "default"
+          },
+          "apa,informasi,login,saya": {
+            "intent": "login",
+            "domain": "default"
+          },
+          "bisa,login,saya,tidak": {
+            "intent": "login",
+            "domain": "default"
+          },
+          "daftar,ingin,saya": {
+            "intent": "register",
+            "domain": "default"
+          },
+          "daftar,saya": {
+            "intent": "register",
+            "domain": "default"
+          },
+          "bagaimana,cara,daftar": {
+            "intent": "register",
+            "domain": "default"
+          },
+          "akun,buat,perlu,saya": {
+            "intent": "register",
+            "domain": "default"
+          },
+          "akun,baru,daftar": {
+            "intent": "register",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "forgot_password": "default",
+          "greetings": "default",
+          "login": "default",
+          "register": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "Saya lupa password saya",
+            "intent": "forgot_password"
+          },
+          {
+            "domain": "default",
+            "utterance": "Saya tidak ingat password saya",
+            "intent": "forgot_password"
+          },
+          {
+            "domain": "default",
+            "utterance": "Reset password saya",
+            "intent": "forgot_password"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bagaimana cara mereset password?",
+            "intent": "forgot_password"
+          },
+          {
+            "domain": "default",
+            "utterance": "Saya perlu bantuan dengan password",
+            "intent": "forgot_password"
+          },
+          {
+            "domain": "default",
+            "utterance": "Password saya tidak berfungsi",
+            "intent": "forgot_password"
+          },
+          {
+            "domain": "default",
+            "utterance": "Halo",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hai",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "Selamat pagi",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "Selamat siang",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "Selamat sore",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "Selamat malam",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "Apa kabar?",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "Apa yang sedang terjadi?",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "Saya ingin login",
+            "intent": "login"
+          },
+          {
+            "domain": "default",
+            "utterance": "Masukkan saya",
+            "intent": "login"
+          },
+          {
+            "domain": "default",
+            "utterance": "Saya perlu masuk",
+            "intent": "login"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bagaimana cara login?",
+            "intent": "login"
+          },
+          {
+            "domain": "default",
+            "utterance": "Apa informasi login saya?",
+            "intent": "login"
+          },
+          {
+            "domain": "default",
+            "utterance": "Saya tidak bisa login",
+            "intent": "login"
+          },
+          {
+            "domain": "default",
+            "utterance": "Saya ingin mendaftar",
+            "intent": "register"
+          },
+          {
+            "domain": "default",
+            "utterance": "Daftarkan saya",
+            "intent": "register"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bagaimana cara mendaftar?",
+            "intent": "register"
+          },
+          {
+            "domain": "default",
+            "utterance": "Saya perlu membuat akun",
+            "intent": "register"
+          },
+          {
+            "domain": "default",
+            "utterance": "Daftarkan akun baru",
+            "intent": "register"
+          },
+          {
+            "domain": "default",
+            "utterance": "Saya ingin mendaftar",
+            "intent": "register"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "id",
+              "tag": "nlu-id",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "saya": 1,
+              "lupa": 1,
+              "password": 1,
+              "tidak": 1,
+              "ingat": 1,
+              "reset": 1,
+              "bagaimana": 1,
+              "cara": 1,
+              "perlu": 1,
+              "bantu": 1,
+              "dengan": 1,
+              "fungsi": 1,
+              "halo": 1,
+              "hai": 1,
+              "selamat": 1,
+              "pagi": 1,
+              "siang": 1,
+              "sore": 1,
+              "malam": 1,
+              "apa": 1,
+              "kabar": 1,
+              "yang": 1,
+              "sedang": 1,
+              "jadi": 1,
+              "ingin": 1,
+              "login": 1,
+              "masuk": 1,
+              "informasi": 1,
+              "bisa": 1,
+              "daftar": 1,
+              "buat": 1,
+              "akun": 1,
+              "baru": 1
+            },
+            "intents": {
+              "forgot_password": 1,
+              "greetings": 1,
+              "login": 1,
+              "register": 1
+            },
+            "intentFeatures": {
+              "forgot_password": {
+                "saya": 1,
+                "lupa": 1,
+                "password": 1,
+                "tidak": 1,
+                "ingat": 1,
+                "reset": 1,
+                "bagaimana": 1,
+                "cara": 1,
+                "perlu": 1,
+                "bantu": 1,
+                "dengan": 1,
+                "fungsi": 1
+              },
+              "greetings": {
+                "halo": 1,
+                "hai": 1,
+                "selamat": 1,
+                "pagi": 1,
+                "siang": 1,
+                "sore": 1,
+                "malam": 1,
+                "apa": 1,
+                "kabar": 1,
+                "yang": 1,
+                "sedang": 1,
+                "jadi": 1
+              },
+              "login": {
+                "saya": 1,
+                "ingin": 1,
+                "login": 1,
+                "masuk": 1,
+                "perlu": 1,
+                "bagaimana": 1,
+                "cara": 1,
+                "apa": 1,
+                "informasi": 1,
+                "tidak": 1,
+                "bisa": 1
+              },
+              "register": {
+                "saya": 1,
+                "ingin": 1,
+                "daftar": 1,
+                "bagaimana": 1,
+                "cara": 1,
+                "perlu": 1,
+                "buat": 1,
+                "akun": 1,
+                "baru": 1
+              }
+            },
+            "featuresToIntent": {
+              "saya": [
+                "forgot_password",
+                "login",
+                "register"
+              ],
+              "lupa": [
+                "forgot_password"
+              ],
+              "password": [
+                "forgot_password"
+              ],
+              "tidak": [
+                "forgot_password",
+                "login"
+              ],
+              "ingat": [
+                "forgot_password"
+              ],
+              "reset": [
+                "forgot_password"
+              ],
+              "bagaimana": [
+                "forgot_password",
+                "login",
+                "register"
+              ],
+              "cara": [
+                "forgot_password",
+                "login",
+                "register"
+              ],
+              "perlu": [
+                "forgot_password",
+                "login",
+                "register"
+              ],
+              "bantu": [
+                "forgot_password"
+              ],
+              "dengan": [
+                "forgot_password"
+              ],
+              "fungsi": [
+                "forgot_password"
+              ],
+              "halo": [
+                "greetings"
+              ],
+              "hai": [
+                "greetings"
+              ],
+              "selamat": [
+                "greetings"
+              ],
+              "pagi": [
+                "greetings"
+              ],
+              "siang": [
+                "greetings"
+              ],
+              "sore": [
+                "greetings"
+              ],
+              "malam": [
+                "greetings"
+              ],
+              "apa": [
+                "greetings",
+                "login"
+              ],
+              "kabar": [
+                "greetings"
+              ],
+              "yang": [
+                "greetings"
+              ],
+              "sedang": [
+                "greetings"
+              ],
+              "jadi": [
+                "greetings"
+              ],
+              "ingin": [
+                "login",
+                "register"
+              ],
+              "login": [
+                "login"
+              ],
+              "masuk": [
+                "login"
+              ],
+              "informasi": [
+                "login"
+              ],
+              "bisa": [
+                "login"
+              ],
+              "daftar": [
+                "register"
+              ],
+              "buat": [
+                "register"
+              ],
+              "akun": [
+                "register"
+              ],
+              "baru": [
+                "register"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "id",
+                "tag": "nlu-id",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "saya",
+                "lupa",
+                "password",
+                "tidak",
+                "ingat",
+                "reset",
+                "bagaimana",
+                "cara",
+                "perlu",
+                "bantu",
+                "dengan",
+                "fungsi",
+                "halo",
+                "hai",
+                "selamat",
+                "pagi",
+                "siang",
+                "sore",
+                "malam",
+                "apa",
+                "kabar",
+                "yang",
+                "sedang",
+                "jadi",
+                "ingin",
+                "login",
+                "masuk",
+                "informasi",
+                "bisa",
+                "daftar",
+                "buat",
+                "akun",
+                "baru"
+              ],
+              "intents": [
+                "forgot_password",
+                "greetings",
+                "login",
+                "register"
+              ],
+              "perceptrons": [
+                [
+                  1.6604231595993042,
+                  2.6642508506774902,
+                  9.639483451843262,
+                  1.4700583219528198,
+                  1.342800498008728,
+                  2.8604736328125,
+                  0.771191418170929,
+                  0.771191418170929,
+                  -0.2640768885612488,
+                  1.5177088975906372,
+                  1.5177088975906372,
+                  1.2485545873641968,
+                  -0.36296263337135315,
+                  -0.3498971164226532,
+                  -0.7691367864608765,
+                  -0.16515623033046722,
+                  -0.1489076465368271,
+                  -0.1319575160741806,
+                  -0.1157144084572792,
+                  -0.7318083643913269,
+                  -0.1466171145439148,
+                  -0.12501661479473114,
+                  -0.12501661479473114,
+                  -0.12501661479473114,
+                  -1.134839415550232,
+                  -2.4701385498046875,
+                  -1.9785994291305542,
+                  -0.31949952244758606,
+                  -1.085641622543335,
+                  -1.8690403699874878,
+                  -0.8449648022651672,
+                  -0.8449648022651672,
+                  0,
+                  0.21923545422099455
+                ],
+                [
+                  -5.470224380493164,
+                  -0.3092923164367676,
+                  -1.5124704837799072,
+                  -0.3084466755390167,
+                  -0.12569347023963928,
+                  -1.0344367027282715,
+                  -2.3415815830230713,
+                  -2.3415815830230713,
+                  -0.6783813834190369,
+                  -0.004634054843336344,
+                  -0.004634054843336344,
+                  -0.021266307681798935,
+                  6.759189605712891,
+                  6.809958457946777,
+                  5.625407695770264,
+                  1.4216477870941162,
+                  1.4139734506607056,
+                  1.4051721096038818,
+                  1.3935208320617676,
+                  3.234196662902832,
+                  3.790072202682495,
+                  1.2673850059509277,
+                  1.2673850059509277,
+                  1.2673850059509277,
+                  -0.6814707517623901,
+                  -3.2098615169525146,
+                  -1.7141748666763306,
+                  -1.82145357131958,
+                  -0.1066419929265976,
+                  -3.1201117038726807,
+                  -0.1802414506673813,
+                  -2.156139612197876,
+                  -1.9516832828521729,
+                  7.260544955235329
+                ],
+                [
+                  3.902175188064575,
+                  -0.90825355052948,
+                  -4.118186950683594,
+                  -0.44512230157852173,
+                  -0.8407022356987,
+                  -1.1189279556274414,
+                  2.1540675163269043,
+                  2.1540675163269043,
+                  0.3499833643436432,
+                  -0.6537578701972961,
+                  -0.6537578701972961,
+                  -0.5485936999320984,
+                  -0.9293208122253418,
+                  -0.9192900657653809,
+                  -0.8441771268844604,
+                  -0.2297709435224533,
+                  -0.2138628214597702,
+                  -0.19750097393989563,
+                  -0.18410688638687134,
+                  -0.4013294279575348,
+                  -0.8415325880050659,
+                  -0.439764142036438,
+                  -0.439764142036438,
+                  -0.439764142036438,
+                  0.4226381182670593,
+                  8.898343086242676,
+                  9.154539108276367,
+                  0.9297181963920593,
+                  0.9781115651130676,
+                  -5.288144588470459,
+                  -2.630333185195923,
+                  -2.681360960006714,
+                  -0.025514008477330208,
+                  0.9836629804590684
+                ],
+                [
+                  2.9404819011688232,
+                  -0.6758792996406555,
+                  -3.2438151836395264,
+                  -0.8787195682525635,
+                  -0.49353712797164917,
+                  -0.8397568464279175,
+                  1.7022732496261597,
+                  1.7022732496261597,
+                  1.2223212718963623,
+                  -0.7189215421676636,
+                  -0.7189215421676636,
+                  -0.16663330793380737,
+                  -0.6797764301300049,
+                  -0.6680707931518555,
+                  -1.00499427318573,
+                  -0.2580137252807617,
+                  -0.23172594606876373,
+                  -0.20579354465007782,
+                  -0.18151670694351196,
+                  -0.7346857786178589,
+                  -0.29012200236320496,
+                  -0.19609782099723816,
+                  -0.19609782099723816,
+                  -0.19609782099723816,
+                  0.5657803416252136,
+                  -3.926278829574585,
+                  -4.279659748077393,
+                  -0.1601991057395935,
+                  -0.05091474950313568,
+                  10.37412166595459,
+                  5.045535564422607,
+                  4.350471019744873,
+                  -0.7024694085121155,
+                  0.49495252040797205
+                ]
+              ]
+            }
+          }
+        }
+      },
       "en": {
         "settings": {
           "locale": "en",
@@ -791,790 +1467,10 @@
             }
           }
         }
-      },
-      "id": {
-        "settings": {
-          "locale": "id",
-          "trainByDomain": false,
-          "tag": "domain-manager-id",
-          "nluByDomain": {
-            "default": {
-              "className": "NeuralNlu",
-              "settings": {}
-            }
-          },
-          "useStemDict": true
-        },
-        "stemDict": {
-          "lupa,password,saya": {
-            "intent": "forgot_password",
-            "domain": "default"
-          },
-          "ingat,password,saya,tidak": {
-            "intent": "forgot_password",
-            "domain": "default"
-          },
-          "password,reset,saya": {
-            "intent": "forgot_password",
-            "domain": "default"
-          },
-          "bagaimana,cara,password,reset": {
-            "intent": "forgot_password",
-            "domain": "default"
-          },
-          "bantu,dengan,password,perlu,saya": {
-            "intent": "forgot_password",
-            "domain": "default"
-          },
-          "fungsi,password,saya,tidak": {
-            "intent": "forgot_password",
-            "domain": "default"
-          },
-          "halo": {
-            "intent": "greetings",
-            "domain": "default"
-          },
-          "hai": {
-            "intent": "greetings",
-            "domain": "default"
-          },
-          "pagi,selamat": {
-            "intent": "greetings",
-            "domain": "default"
-          },
-          "selamat,siang": {
-            "intent": "greetings",
-            "domain": "default"
-          },
-          "selamat,sore": {
-            "intent": "greetings",
-            "domain": "default"
-          },
-          "malam,selamat": {
-            "intent": "greetings",
-            "domain": "default"
-          },
-          "apa,kabar": {
-            "intent": "greetings",
-            "domain": "default"
-          },
-          "apa,jadi,sedang,yang": {
-            "intent": "greetings",
-            "domain": "default"
-          },
-          "ingin,login,saya": {
-            "intent": "login",
-            "domain": "default"
-          },
-          "masuk,saya": {
-            "intent": "login",
-            "domain": "default"
-          },
-          "masuk,perlu,saya": {
-            "intent": "login",
-            "domain": "default"
-          },
-          "bagaimana,cara,login": {
-            "intent": "login",
-            "domain": "default"
-          },
-          "apa,informasi,login,saya": {
-            "intent": "login",
-            "domain": "default"
-          },
-          "bisa,login,saya,tidak": {
-            "intent": "login",
-            "domain": "default"
-          },
-          "daftar,ingin,saya": {
-            "intent": "register",
-            "domain": "default"
-          },
-          "daftar,saya": {
-            "intent": "register",
-            "domain": "default"
-          },
-          "bagaimana,cara,daftar": {
-            "intent": "register",
-            "domain": "default"
-          },
-          "akun,buat,perlu,saya": {
-            "intent": "register",
-            "domain": "default"
-          },
-          "akun,baru,daftar": {
-            "intent": "register",
-            "domain": "default"
-          }
-        },
-        "intentDict": {
-          "forgot_password": "default",
-          "greetings": "default",
-          "login": "default",
-          "register": "default"
-        },
-        "sentences": [
-          {
-            "domain": "default",
-            "utterance": "Saya lupa password saya",
-            "intent": "forgot_password"
-          },
-          {
-            "domain": "default",
-            "utterance": "Saya tidak ingat password saya",
-            "intent": "forgot_password"
-          },
-          {
-            "domain": "default",
-            "utterance": "Reset password saya",
-            "intent": "forgot_password"
-          },
-          {
-            "domain": "default",
-            "utterance": "Bagaimana cara mereset password?",
-            "intent": "forgot_password"
-          },
-          {
-            "domain": "default",
-            "utterance": "Saya perlu bantuan dengan password",
-            "intent": "forgot_password"
-          },
-          {
-            "domain": "default",
-            "utterance": "Password saya tidak berfungsi",
-            "intent": "forgot_password"
-          },
-          {
-            "domain": "default",
-            "utterance": "Halo",
-            "intent": "greetings"
-          },
-          {
-            "domain": "default",
-            "utterance": "Hai",
-            "intent": "greetings"
-          },
-          {
-            "domain": "default",
-            "utterance": "Selamat pagi",
-            "intent": "greetings"
-          },
-          {
-            "domain": "default",
-            "utterance": "Selamat siang",
-            "intent": "greetings"
-          },
-          {
-            "domain": "default",
-            "utterance": "Selamat sore",
-            "intent": "greetings"
-          },
-          {
-            "domain": "default",
-            "utterance": "Selamat malam",
-            "intent": "greetings"
-          },
-          {
-            "domain": "default",
-            "utterance": "Apa kabar?",
-            "intent": "greetings"
-          },
-          {
-            "domain": "default",
-            "utterance": "Apa yang sedang terjadi?",
-            "intent": "greetings"
-          },
-          {
-            "domain": "default",
-            "utterance": "Saya ingin login",
-            "intent": "login"
-          },
-          {
-            "domain": "default",
-            "utterance": "Masukkan saya",
-            "intent": "login"
-          },
-          {
-            "domain": "default",
-            "utterance": "Saya perlu masuk",
-            "intent": "login"
-          },
-          {
-            "domain": "default",
-            "utterance": "Bagaimana cara login?",
-            "intent": "login"
-          },
-          {
-            "domain": "default",
-            "utterance": "Apa informasi login saya?",
-            "intent": "login"
-          },
-          {
-            "domain": "default",
-            "utterance": "Saya tidak bisa login",
-            "intent": "login"
-          },
-          {
-            "domain": "default",
-            "utterance": "Saya ingin mendaftar",
-            "intent": "register"
-          },
-          {
-            "domain": "default",
-            "utterance": "Daftarkan saya",
-            "intent": "register"
-          },
-          {
-            "domain": "default",
-            "utterance": "Bagaimana cara mendaftar?",
-            "intent": "register"
-          },
-          {
-            "domain": "default",
-            "utterance": "Saya perlu membuat akun",
-            "intent": "register"
-          },
-          {
-            "domain": "default",
-            "utterance": "Daftarkan akun baru",
-            "intent": "register"
-          },
-          {
-            "domain": "default",
-            "utterance": "Saya ingin mendaftar",
-            "intent": "register"
-          }
-        ],
-        "domains": {
-          "master_domain": {
-            "settings": {
-              "locale": "id",
-              "tag": "nlu-id",
-              "keepStopwords": true,
-              "nonefeatureValue": 1,
-              "nonedeltaMultiplier": 1.2,
-              "spellCheck": false,
-              "spellCheckDistance": 1,
-              "filterZeros": true,
-              "log": true
-            },
-            "features": {
-              "saya": 1,
-              "lupa": 1,
-              "password": 1,
-              "tidak": 1,
-              "ingat": 1,
-              "reset": 1,
-              "bagaimana": 1,
-              "cara": 1,
-              "perlu": 1,
-              "bantu": 1,
-              "dengan": 1,
-              "fungsi": 1,
-              "halo": 1,
-              "hai": 1,
-              "selamat": 1,
-              "pagi": 1,
-              "siang": 1,
-              "sore": 1,
-              "malam": 1,
-              "apa": 1,
-              "kabar": 1,
-              "yang": 1,
-              "sedang": 1,
-              "jadi": 1,
-              "ingin": 1,
-              "login": 1,
-              "masuk": 1,
-              "informasi": 1,
-              "bisa": 1,
-              "daftar": 1,
-              "buat": 1,
-              "akun": 1,
-              "baru": 1
-            },
-            "intents": {
-              "forgot_password": 1,
-              "greetings": 1,
-              "login": 1,
-              "register": 1
-            },
-            "intentFeatures": {
-              "forgot_password": {
-                "saya": 1,
-                "lupa": 1,
-                "password": 1,
-                "tidak": 1,
-                "ingat": 1,
-                "reset": 1,
-                "bagaimana": 1,
-                "cara": 1,
-                "perlu": 1,
-                "bantu": 1,
-                "dengan": 1,
-                "fungsi": 1
-              },
-              "greetings": {
-                "halo": 1,
-                "hai": 1,
-                "selamat": 1,
-                "pagi": 1,
-                "siang": 1,
-                "sore": 1,
-                "malam": 1,
-                "apa": 1,
-                "kabar": 1,
-                "yang": 1,
-                "sedang": 1,
-                "jadi": 1
-              },
-              "login": {
-                "saya": 1,
-                "ingin": 1,
-                "login": 1,
-                "masuk": 1,
-                "perlu": 1,
-                "bagaimana": 1,
-                "cara": 1,
-                "apa": 1,
-                "informasi": 1,
-                "tidak": 1,
-                "bisa": 1
-              },
-              "register": {
-                "saya": 1,
-                "ingin": 1,
-                "daftar": 1,
-                "bagaimana": 1,
-                "cara": 1,
-                "perlu": 1,
-                "buat": 1,
-                "akun": 1,
-                "baru": 1
-              }
-            },
-            "featuresToIntent": {
-              "saya": [
-                "forgot_password",
-                "login",
-                "register"
-              ],
-              "lupa": [
-                "forgot_password"
-              ],
-              "password": [
-                "forgot_password"
-              ],
-              "tidak": [
-                "forgot_password",
-                "login"
-              ],
-              "ingat": [
-                "forgot_password"
-              ],
-              "reset": [
-                "forgot_password"
-              ],
-              "bagaimana": [
-                "forgot_password",
-                "login",
-                "register"
-              ],
-              "cara": [
-                "forgot_password",
-                "login",
-                "register"
-              ],
-              "perlu": [
-                "forgot_password",
-                "login",
-                "register"
-              ],
-              "bantu": [
-                "forgot_password"
-              ],
-              "dengan": [
-                "forgot_password"
-              ],
-              "fungsi": [
-                "forgot_password"
-              ],
-              "halo": [
-                "greetings"
-              ],
-              "hai": [
-                "greetings"
-              ],
-              "selamat": [
-                "greetings"
-              ],
-              "pagi": [
-                "greetings"
-              ],
-              "siang": [
-                "greetings"
-              ],
-              "sore": [
-                "greetings"
-              ],
-              "malam": [
-                "greetings"
-              ],
-              "apa": [
-                "greetings",
-                "login"
-              ],
-              "kabar": [
-                "greetings"
-              ],
-              "yang": [
-                "greetings"
-              ],
-              "sedang": [
-                "greetings"
-              ],
-              "jadi": [
-                "greetings"
-              ],
-              "ingin": [
-                "login",
-                "register"
-              ],
-              "login": [
-                "login"
-              ],
-              "masuk": [
-                "login"
-              ],
-              "informasi": [
-                "login"
-              ],
-              "bisa": [
-                "login"
-              ],
-              "daftar": [
-                "register"
-              ],
-              "buat": [
-                "register"
-              ],
-              "akun": [
-                "register"
-              ],
-              "baru": [
-                "register"
-              ]
-            },
-            "neuralNetwork": {
-              "settings": {
-                "locale": "id",
-                "tag": "nlu-id",
-                "keepStopwords": true,
-                "nonefeatureValue": 1,
-                "nonedeltaMultiplier": 1.2,
-                "spellCheck": false,
-                "spellCheckDistance": 1,
-                "filterZeros": true,
-                "log": true
-              },
-              "features": [
-                "saya",
-                "lupa",
-                "password",
-                "tidak",
-                "ingat",
-                "reset",
-                "bagaimana",
-                "cara",
-                "perlu",
-                "bantu",
-                "dengan",
-                "fungsi",
-                "halo",
-                "hai",
-                "selamat",
-                "pagi",
-                "siang",
-                "sore",
-                "malam",
-                "apa",
-                "kabar",
-                "yang",
-                "sedang",
-                "jadi",
-                "ingin",
-                "login",
-                "masuk",
-                "informasi",
-                "bisa",
-                "daftar",
-                "buat",
-                "akun",
-                "baru"
-              ],
-              "intents": [
-                "forgot_password",
-                "greetings",
-                "login",
-                "register"
-              ],
-              "perceptrons": [
-                [
-                  1.6604231595993042,
-                  2.6642508506774902,
-                  9.639483451843262,
-                  1.4700583219528198,
-                  1.342800498008728,
-                  2.8604736328125,
-                  0.771191418170929,
-                  0.771191418170929,
-                  -0.2640768885612488,
-                  1.5177088975906372,
-                  1.5177088975906372,
-                  1.2485545873641968,
-                  -0.36296263337135315,
-                  -0.3498971164226532,
-                  -0.7691367864608765,
-                  -0.16515623033046722,
-                  -0.1489076465368271,
-                  -0.1319575160741806,
-                  -0.1157144084572792,
-                  -0.7318083643913269,
-                  -0.1466171145439148,
-                  -0.12501661479473114,
-                  -0.12501661479473114,
-                  -0.12501661479473114,
-                  -1.134839415550232,
-                  -2.4701385498046875,
-                  -1.9785994291305542,
-                  -0.31949952244758606,
-                  -1.085641622543335,
-                  -1.8690403699874878,
-                  -0.8449648022651672,
-                  -0.8449648022651672,
-                  0,
-                  0.21923545422099455
-                ],
-                [
-                  -5.470224380493164,
-                  -0.3092923164367676,
-                  -1.5124704837799072,
-                  -0.3084466755390167,
-                  -0.12569347023963928,
-                  -1.0344367027282715,
-                  -2.3415815830230713,
-                  -2.3415815830230713,
-                  -0.6783813834190369,
-                  -0.004634054843336344,
-                  -0.004634054843336344,
-                  -0.021266307681798935,
-                  6.759189605712891,
-                  6.809958457946777,
-                  5.625407695770264,
-                  1.4216477870941162,
-                  1.4139734506607056,
-                  1.4051721096038818,
-                  1.3935208320617676,
-                  3.234196662902832,
-                  3.790072202682495,
-                  1.2673850059509277,
-                  1.2673850059509277,
-                  1.2673850059509277,
-                  -0.6814707517623901,
-                  -3.2098615169525146,
-                  -1.7141748666763306,
-                  -1.82145357131958,
-                  -0.1066419929265976,
-                  -3.1201117038726807,
-                  -0.1802414506673813,
-                  -2.156139612197876,
-                  -1.9516832828521729,
-                  7.260544955235329
-                ],
-                [
-                  3.902175188064575,
-                  -0.90825355052948,
-                  -4.118186950683594,
-                  -0.44512230157852173,
-                  -0.8407022356987,
-                  -1.1189279556274414,
-                  2.1540675163269043,
-                  2.1540675163269043,
-                  0.3499833643436432,
-                  -0.6537578701972961,
-                  -0.6537578701972961,
-                  -0.5485936999320984,
-                  -0.9293208122253418,
-                  -0.9192900657653809,
-                  -0.8441771268844604,
-                  -0.2297709435224533,
-                  -0.2138628214597702,
-                  -0.19750097393989563,
-                  -0.18410688638687134,
-                  -0.4013294279575348,
-                  -0.8415325880050659,
-                  -0.439764142036438,
-                  -0.439764142036438,
-                  -0.439764142036438,
-                  0.4226381182670593,
-                  8.898343086242676,
-                  9.154539108276367,
-                  0.9297181963920593,
-                  0.9781115651130676,
-                  -5.288144588470459,
-                  -2.630333185195923,
-                  -2.681360960006714,
-                  -0.025514008477330208,
-                  0.9836629804590684
-                ],
-                [
-                  2.9404819011688232,
-                  -0.6758792996406555,
-                  -3.2438151836395264,
-                  -0.8787195682525635,
-                  -0.49353712797164917,
-                  -0.8397568464279175,
-                  1.7022732496261597,
-                  1.7022732496261597,
-                  1.2223212718963623,
-                  -0.7189215421676636,
-                  -0.7189215421676636,
-                  -0.16663330793380737,
-                  -0.6797764301300049,
-                  -0.6680707931518555,
-                  -1.00499427318573,
-                  -0.2580137252807617,
-                  -0.23172594606876373,
-                  -0.20579354465007782,
-                  -0.18151670694351196,
-                  -0.7346857786178589,
-                  -0.29012200236320496,
-                  -0.19609782099723816,
-                  -0.19609782099723816,
-                  -0.19609782099723816,
-                  0.5657803416252136,
-                  -3.926278829574585,
-                  -4.279659748077393,
-                  -0.1601991057395935,
-                  -0.05091474950313568,
-                  10.37412166595459,
-                  5.045535564422607,
-                  4.350471019744873,
-                  -0.7024694085121155,
-                  0.49495252040797205
-                ]
-              ]
-            }
-          }
-        }
       }
     },
     "intentDomains": {},
     "extraSentences": [
-      [
-        "en",
-        "I forgot my password"
-      ],
-      [
-        "en",
-        "I can't remember my password"
-      ],
-      [
-        "en",
-        "Reset my password"
-      ],
-      [
-        "en",
-        "How do I reset my password?"
-      ],
-      [
-        "en",
-        "I need help with my password"
-      ],
-      [
-        "en",
-        "My password is not working"
-      ],
-      [
-        "en",
-        "Hello"
-      ],
-      [
-        "en",
-        "Hi"
-      ],
-      [
-        "en",
-        "Hey"
-      ],
-      [
-        "en",
-        "Good morning"
-      ],
-      [
-        "en",
-        "Good afternoon"
-      ],
-      [
-        "en",
-        "Good evening"
-      ],
-      [
-        "en",
-        "How are you?"
-      ],
-      [
-        "en",
-        "What’s up?"
-      ],
-      [
-        "en",
-        "I want to log in"
-      ],
-      [
-        "en",
-        "Log me in"
-      ],
-      [
-        "en",
-        "I need to sign in"
-      ],
-      [
-        "en",
-        "How do I log in?"
-      ],
-      [
-        "en",
-        "What’s my login info?"
-      ],
-      [
-        "en",
-        "I can’t log in"
-      ],
-      [
-        "en",
-        "I want to register"
-      ],
-      [
-        "en",
-        "Sign me up"
-      ],
-      [
-        "en",
-        "How do I register?"
-      ],
-      [
-        "en",
-        "I need to create an account"
-      ],
-      [
-        "en",
-        "Register a new account"
-      ],
-      [
-        "en",
-        "I want to sign up"
-      ],
       [
         "id",
         "Saya lupa password saya"
@@ -1678,6 +1574,110 @@
       [
         "id",
         "Saya ingin mendaftar"
+      ],
+      [
+        "en",
+        "I forgot my password"
+      ],
+      [
+        "en",
+        "I can't remember my password"
+      ],
+      [
+        "en",
+        "Reset my password"
+      ],
+      [
+        "en",
+        "How do I reset my password?"
+      ],
+      [
+        "en",
+        "I need help with my password"
+      ],
+      [
+        "en",
+        "My password is not working"
+      ],
+      [
+        "en",
+        "Hello"
+      ],
+      [
+        "en",
+        "Hi"
+      ],
+      [
+        "en",
+        "Hey"
+      ],
+      [
+        "en",
+        "Good morning"
+      ],
+      [
+        "en",
+        "Good afternoon"
+      ],
+      [
+        "en",
+        "Good evening"
+      ],
+      [
+        "en",
+        "How are you?"
+      ],
+      [
+        "en",
+        "What’s up?"
+      ],
+      [
+        "en",
+        "I want to log in"
+      ],
+      [
+        "en",
+        "Log me in"
+      ],
+      [
+        "en",
+        "I need to sign in"
+      ],
+      [
+        "en",
+        "How do I log in?"
+      ],
+      [
+        "en",
+        "What’s my login info?"
+      ],
+      [
+        "en",
+        "I can’t log in"
+      ],
+      [
+        "en",
+        "I want to register"
+      ],
+      [
+        "en",
+        "Sign me up"
+      ],
+      [
+        "en",
+        "How do I register?"
+      ],
+      [
+        "en",
+        "I need to create an account"
+      ],
+      [
+        "en",
+        "Register a new account"
+      ],
+      [
+        "en",
+        "I want to sign up"
       ]
     ]
   },
@@ -1694,85 +1694,6 @@
       "tag": "nlg-manager"
     },
     "responses": {
-      "en": {
-        "forgot_password": [
-          {
-            "answer": "You can reset your password by clicking on the 'Forgot Password' link on the login page."
-          },
-          {
-            "answer": "To reset your password, please follow the instructions sent to your email."
-          },
-          {
-            "answer": "Click the 'Forgot Password' link and follow the steps to create a new password."
-          },
-          {
-            "answer": "For help with your password, visit the password reset page and enter your email address."
-          },
-          {
-            "answer": "If your password isn’t working, try resetting it through the 'Forgot Password' link."
-          }
-        ],
-        "greetings": [
-          {
-            "answer": "Hello! How can I assist you today?"
-          },
-          {
-            "answer": "Hi there! What can I do for you?"
-          },
-          {
-            "answer": "Hey! How can I help you?"
-          },
-          {
-            "answer": "Good morning! How can I help you today?"
-          },
-          {
-            "answer": "Good afternoon! What can I do for you?"
-          },
-          {
-            "answer": "Good evening! How can I assist you?"
-          },
-          {
-            "answer": "How are you? Is there anything I can help with?"
-          },
-          {
-            "answer": "What’s up? How can I assist you?"
-          }
-        ],
-        "login": [
-          {
-            "answer": "Please enter your username and password to log in."
-          },
-          {
-            "answer": "To log in, go to the login page and enter your credentials."
-          },
-          {
-            "answer": "If you need to sign in, use the login form on our website."
-          },
-          {
-            "answer": "For login assistance, visit the login page and follow the instructions."
-          },
-          {
-            "answer": "If you can’t log in, make sure your credentials are correct or try resetting your password."
-          }
-        ],
-        "register": [
-          {
-            "answer": "To register, please visit the registration page and fill out the required information."
-          },
-          {
-            "answer": "You can sign up by clicking on the 'Register' button and entering your details."
-          },
-          {
-            "answer": "To create a new account, go to the registration page and follow the instructions."
-          },
-          {
-            "answer": "Visit the registration page to sign up for a new account."
-          },
-          {
-            "answer": "Click 'Sign Up' to start the registration process."
-          }
-        ]
-      },
       "id": {
         "forgot_password": [
           {
@@ -1849,6 +1770,85 @@
           },
           {
             "answer": "Klik 'Daftar' untuk memulai proses pendaftaran."
+          }
+        ]
+      },
+      "en": {
+        "forgot_password": [
+          {
+            "answer": "You can reset your password by clicking on the 'Forgot Password' link on the login page."
+          },
+          {
+            "answer": "To reset your password, please follow the instructions sent to your email."
+          },
+          {
+            "answer": "Click the 'Forgot Password' link and follow the steps to create a new password."
+          },
+          {
+            "answer": "For help with your password, visit the password reset page and enter your email address."
+          },
+          {
+            "answer": "If your password isn’t working, try resetting it through the 'Forgot Password' link."
+          }
+        ],
+        "greetings": [
+          {
+            "answer": "Hello! How can I assist you today?"
+          },
+          {
+            "answer": "Hi there! What can I do for you?"
+          },
+          {
+            "answer": "Hey! How can I help you?"
+          },
+          {
+            "answer": "Good morning! How can I help you today?"
+          },
+          {
+            "answer": "Good afternoon! What can I do for you?"
+          },
+          {
+            "answer": "Good evening! How can I assist you?"
+          },
+          {
+            "answer": "How are you? Is there anything I can help with?"
+          },
+          {
+            "answer": "What’s up? How can I assist you?"
+          }
+        ],
+        "login": [
+          {
+            "answer": "Please enter your username and password to log in."
+          },
+          {
+            "answer": "To log in, go to the login page and enter your credentials."
+          },
+          {
+            "answer": "If you need to sign in, use the login form on our website."
+          },
+          {
+            "answer": "For login assistance, visit the login page and follow the instructions."
+          },
+          {
+            "answer": "If you can’t log in, make sure your credentials are correct or try resetting your password."
+          }
+        ],
+        "register": [
+          {
+            "answer": "To register, please visit the registration page and fill out the required information."
+          },
+          {
+            "answer": "You can sign up by clicking on the 'Register' button and entering your details."
+          },
+          {
+            "answer": "To create a new account, go to the registration page and follow the instructions."
+          },
+          {
+            "answer": "Visit the registration page to sign up for a new account."
+          },
+          {
+            "answer": "Click 'Sign Up' to start the registration process."
           }
         ]
       }
