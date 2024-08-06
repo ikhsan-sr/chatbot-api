@@ -2,7 +2,7 @@
     "intents": [
       {
         "intent": "login",
-        "examples": [
+        "utterances": [
           "Saya ingin login",
           "Masukkan saya",
           "Saya perlu masuk",
@@ -10,7 +10,7 @@
           "Apa informasi login saya?",
           "Saya tidak bisa login"
         ],
-        "responses": [
+        "answers": [
           "Silakan masukkan nama pengguna dan password Anda untuk login.",
           "Untuk login, pergi ke halaman login dan masukkan kredensial Anda.",
           "Jika Anda perlu masuk, gunakan formulir login di situs web kami.",

@@ -7,7 +7,7 @@ const createNlpInstance = async () => {
   const manager = new NlpManager({ languages: ['id', 'en'] });
 
   // Load corpus dynamically
-  const loadCorpus = (language) => {
+  const loadCorpus = (language = 'id') => {
     const corpusPath = path.join(__dirname, `../corpus/${language}`);
     const files = fs.readdirSync(corpusPath);
 
@@ -15,18 +15,18 @@ const createNlpInstance = async () => {
       const filePath = path.join(corpusPath, file);
       const corpus = require(filePath);
       corpus.intents.forEach(intent => {
-        intent.examples.forEach(example => {
+        intent.utterances.forEach(example => {
           manager.addDocument(language, example, intent.intent);
         });
-        intent.responses.forEach(response => {
+        intent.answers.forEach(response => {
           manager.addAnswer(language, intent.intent, response);
         });
       });
     }
   };
 
-  loadCorpus('id');
   loadCorpus('en');
+  loadCorpus('id');
 
   // Train and return the manager
   await manager.train();

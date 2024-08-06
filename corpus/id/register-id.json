@@ -2,7 +2,7 @@
     "intents": [
       {
         "intent": "register",
-        "examples": [
+        "utterances": [
           "Saya ingin mendaftar",
           "Daftarkan saya",
           "Bagaimana cara mendaftar?",
@@ -10,7 +10,7 @@
           "Daftarkan akun baru",
           "Saya ingin mendaftar"
         ],
-        "responses": [
+        "answers": [
           "Untuk mendaftar, silakan kunjungi halaman pendaftaran dan isi informasi yang diperlukan.",
           "Anda dapat mendaftar dengan mengklik tombol 'Daftar' dan memasukkan detail Anda.",
           "Untuk membuat akun baru, pergi ke halaman pendaftaran dan ikuti instruksi.",

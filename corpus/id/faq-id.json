@@ -1,0 +1,184 @@
+{
+  "intents": [
+  {
+    "intent": "faq.apa_itu_sribu",
+    "utterances": [
+      "Apa itu Sribu?",
+      "Bisa jelaskan apa itu Sribu?",
+      "Sribu itu apa?",
+      "Apa yang dimaksud dengan Sribu?",
+      "Tolong jelaskan tentang Sribu.",
+      "Apa yang Sribu lakukan?",
+      "Apa fungsi dari Sribu?",
+      "Ceritakan tentang Sribu.",
+      "Saya ingin tahu tentang Sribu.",
+      "Bagaimana cara kerja Sribu?"
+    ],
+    "answers": [
+      "Sribu adalah marketplace yang menghubungkan bisnis dan pekerja lepas yang menawarkan berbagai layanan digital. Baik Anda membutuhkan desain grafis, penulisan copy, pengembangan web, atau layanan lainnya, Sribu adalah tempat untuk menemukan para profesional berbakat."
+    ]
+  },
+  {
+    "intent": "faq.cara_mencari_pekerja_lepas",
+    "utterances": [
+      "Bagaimana cara mencari pekerja lepas untuk proyek saya?",
+      "Cara mencari freelancer di Sribu?",
+      "Bagaimana menemukan pekerja lepas di Sribu?",
+      "Gimana cara mencari freelancer di Sribu?",
+      "Bagaimana saya bisa mencari pekerja lepas untuk proyek saya di Sribu?",
+      "Bagaimana cara menemukan freelancer yang tepat di Sribu?",
+      "Langkah-langkah mencari pekerja lepas di Sribu?",
+      "Bagaimana menemukan freelancer yang sesuai di Sribu?",
+      "Bisa bantu cara mencari freelancer di Sribu?",
+      "Apa metode untuk mencari pekerja lepas di Sribu?"
+    ],
+    "answers": [
+      "Gunakan bilah pencarian atau telusuri melalui kategori untuk menemukan pekerja lepas yang sesuai dengan kebutuhan proyek Anda. Anda juga dapat mengirim permintaan kepada penjual untuk mengirimkan penawaran kepada Anda."
+    ]
+  },
+  {
+    "intent": "faq.metode_pembayaran",
+    "utterances": [
+      "Metode pembayaran apa yang diterima?",
+      "Bagaimana cara membayar di Sribu?",
+      "Apa saja metode pembayaran yang bisa digunakan?",
+      "Pembayaran di Sribu bisa pakai apa saja?",
+      "Cara pembayaran di Sribu bagaimana?",
+      "Bisa bayar pakai apa di Sribu?",
+      "Jenis pembayaran apa yang tersedia di Sribu?",
+      "Bagaimana cara saya bisa membayar di Sribu?",
+      "Pembayaran apa yang diterima oleh Sribu?",
+      "Apa saja opsi pembayaran di Sribu?"
+    ],
+    "answers": [
+      "Sribu menerima berbagai metode pembayaran, termasuk transfer bank, Virtual Account, kartu kredit, PayPal, dan lainnya. Pilih yang paling sesuai dengan Anda selama proses checkout."
+    ]
+  },
+  {
+    "intent": "faq.tidak_puas_hasil_pekerjaan",
+    "utterances": [
+      "Bagaimana jika saya tidak puas dengan hasil pekerjaan?",
+      "Apa yang harus dilakukan jika hasil pekerjaan tidak memuaskan?",
+      "Jika saya tidak puas dengan hasil kerja, apa yang bisa saya lakukan?",
+      "Bagaimana jika hasil pekerjaannya tidak sesuai?",
+      "Apa yang terjadi jika saya tidak puas dengan hasil pekerjaannya?",
+      "Apa yang bisa dilakukan jika hasilnya tidak memuaskan?",
+      "Bagaimana jika pekerjaan freelancer tidak sesuai harapan?",
+      "Langkah apa yang diambil jika hasil pekerjaan tidak memuaskan?",
+      "Apa yang bisa dilakukan jika hasil pekerjaan tidak sesuai ekspektasi?",
+      "Bagaimana menangani ketidakpuasan terhadap hasil pekerjaan?"
+    ],
+    "answers": [
+      "Jika Anda tidak puas, Anda dapat meminta revisi kepada penjual. Sribu juga menyediakan Pusat Resolusi untuk membantu mediasi dalam sengketa."
+    ]
+  },
+  {
+    "intent": "faq.cara_memberikan_ulasan",
+    "utterances": [
+      "Bagaimana cara memberikan ulasan untuk pekerja lepas?",
+      "Cara memberikan review di Sribu?",
+      "Bagaimana saya bisa memberi ulasan untuk freelancer?",
+      "Gimana cara memberikan rating untuk pekerja lepas?",
+      "Bagaimana cara memberi feedback untuk pekerja lepas di Sribu?",
+      "Bagaimana cara menulis review untuk freelancer?",
+      "Langkah-langkah memberikan ulasan di Sribu?",
+      "Bagaimana saya bisa memberikan testimoni di Sribu?",
+      "Bisa jelaskan cara memberi ulasan di Sribu?",
+      "Bagaimana saya bisa menilai freelancer di Sribu?"
+    ],
+    "answers": [
+      "Setelah pesanan selesai, Anda dapat memberikan ulasan dan memberi peringkat layanan penjual. Ulasan Anda membantu klien lain membuat keputusan yang lebih baik."
+    ]
+  },
+  {
+    "intent": "faq.memulai_sebagai_klien",
+    "utterances": [
+      "Bagaimana cara memulai sebagai klien?",
+      "Cara menjadi klien di Sribu?",
+      "Bagaimana saya bisa mulai menggunakan Sribu?",
+      "Langkah awal untuk menjadi klien di Sribu bagaimana?",
+      "Apa yang harus dilakukan untuk memulai sebagai klien di Sribu?",
+      "Bagaimana cara mendaftar di Sribu?",
+      "Bagaimana saya bisa mulai mencari layanan di Sribu?",
+      "Proses memulai di Sribu sebagai klien bagaimana?",
+      "Apa yang diperlukan untuk memulai di Sribu?",
+      "Bagaimana langkah pertama menjadi klien di Sribu?"
+    ],
+    "answers": [
+      "Untuk memulai, cukup daftar untuk akun Sribu secara gratis. Setelah Anda terdaftar, Anda dapat menjelajahi layanan, menghubungi penjual, dan melakukan pemesanan."
+    ]
+  },
+  {
+    "intent": "faq.berkomunikasi_dengan_pekerja_lepas",
+    "utterances": [
+      "Bagaimana cara berkomunikasi dengan pekerja lepas?",
+      "Cara chat dengan freelancer di Sribu?",
+      "Bagaimana saya bisa berbicara dengan pekerja lepas?",
+      "Gimana cara berkomunikasi dengan penjual di Sribu?",
+      "Bagaimana saya bisa menghubungi pekerja lepas di Sribu?",
+      "Cara menghubungi freelancer di Sribu bagaimana?",
+      "Bagaimana cara menggunakan fitur chat di Sribu?",
+      "Langkah-langkah komunikasi dengan pekerja lepas di Sribu?",
+      "Bagaimana saya bisa berdiskusi dengan freelancer di Sribu?",
+      "Bagaimana cara menggunakan sistem chat di Sribu?"
+    ],
+    "answers": [
+      "Anda dapat berkomunikasi dengan pekerja lepas melalui sistem chat Sribu. Cukup klik profil penjual dan gunakan tombol 'Chat & Negosiasi'."
+    ]
+  },
+  {
+    "intent": "faq.keamanan_pembayaran",
+    "utterances": [
+      "Apakah pembayaran saya aman?",
+      "Bagaimana keamanan pembayaran di Sribu?",
+      "Apakah transaksi di Sribu aman?",
+      "Sribu aman untuk pembayaran?",
+      "Gimana dengan keamanan pembayaran di Sribu?",
+      "Apakah Sribu menyediakan pembayaran yang aman?",
+      "Bagaimana Sribu menjamin keamanan pembayaran?",
+      "Apakah transaksi di Sribu dijamin aman?",
+      "Bagaimana sistem pembayaran aman di Sribu?",
+      "Bagaimana saya bisa memastikan pembayaran saya aman di Sribu?"
+    ],
+    "answers": [
+      "Ya, Sribu menawarkan sistem pembayaran yang aman. Dana akan disimpan dalam escrow hingga pesanan selesai dan disetujui oleh Anda."
+    ]
+  },
+  {
+    "intent": "faq.membatalkan_pesanan",
+    "utterances": [
+      "Bisakah saya membatalkan pesanan?",
+      "Cara membatalkan pesanan di Sribu?",
+      "Bagaimana saya bisa membatalkan pesanan?",
+      "Gimana cara membatalkan order di Sribu?",
+      "Apakah mungkin untuk membatalkan pesanan di Sribu?",
+      "Apa saya bisa membatalkan pesanan di Sribu?",
+      "Langkah-langkah untuk membatalkan pesanan di Sribu?",
+      "Bagaimana proses pembatalan pesanan di Sribu?",
+      "Bisakah saya meminta pembatalan pesanan di Sribu?",
+      "Apa yang perlu dilakukan untuk membatalkan pesanan di Sribu?"
+    ],
+    "answers": [
+      "Ya, Anda dapat meminta pembatalan pesanan jika diperlukan. Namun, penting untuk meninjau kebijakan pembatalan penjual sebelum melakukannya."
+    ]
+  },
+  {
+    "intent": "faq.biaya_penggunaan_sribu",
+    "utterances": [
+      "Apakah ada biaya penggunaan Sribu?",
+      "Biaya apa saja yang dikenakan di Sribu?",
+      "Sribu gratis atau berbayar?",
+      "Apa ada biaya untuk menggunakan Sribu?",
+      "Gimana dengan biaya penggunaan Sribu?",
+      "Apakah ada biaya tambahan di Sribu?",
+      "Bagaimana struktur biaya di Sribu?",
+      "Apakah ada biaya langganan untuk Sribu?",
+      "Berapa biaya yang dikenakan oleh Sribu?",
+      "Apakah ada biaya tersembunyi di Sribu?"
+    ],
+    "answers": [
+      "Bergabung dengan Sribu dan menjelajahi layanan adalah gratis. Namun, mungkin ada biaya layanan yang terkait dengan pesanan. Tinjau bagian 'Harga' untuk detail lebih lanjut."
+    ]
+  }
+]
+}

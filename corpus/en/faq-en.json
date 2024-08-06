@@ -1,0 +1,184 @@
+{
+  "intents": [
+      {
+          "intent": "faq.what_is_sribu",
+          "utterances": [
+              "What is Sribu?",
+              "Can you explain what Sribu is?",
+              "What does Sribu do?",
+              "Tell me about Sribu.",
+              "What is Sribu all about?",
+              "What is the purpose of Sribu?",
+              "Explain Sribu to me.",
+              "I want to know about Sribu.",
+              "How does Sribu work?",
+              "What services does Sribu offer?"
+          ],
+          "answers": [
+              "Sribu is a marketplace that connects businesses with freelancers offering various digital services. Whether you need graphic design, copywriting, web development, or other services, Sribu is the place to find talented professionals."
+          ]
+      },
+      {
+          "intent": "faq.how_to_find_freelancer",
+          "utterances": [
+              "How do I find freelancers for my project?",
+              "How to search for freelancers on Sribu?",
+              "How can I find freelancers on Sribu?",
+              "What's the process for finding freelancers on Sribu?",
+              "How do I locate freelancers for my project on Sribu?",
+              "How to find the right freelancer on Sribu?",
+              "Steps to search for freelancers on Sribu?",
+              "How can I discover freelancers on Sribu?",
+              "Can you help me find a freelancer on Sribu?",
+              "What is the method to find freelancers on Sribu?"
+          ],
+          "answers": [
+              "Use the search bar or browse through categories to find freelancers that match your project needs. You can also send requests to sellers to submit proposals to you."
+          ]
+      },
+      {
+          "intent": "faq.payment_methods",
+          "utterances": [
+              "What payment methods are accepted?",
+              "How do I pay on Sribu?",
+              "What payment methods can I use?",
+              "What payment options are available on Sribu?",
+              "How to make a payment on Sribu?",
+              "What are the payment options on Sribu?",
+              "What types of payment does Sribu accept?",
+              "How can I make a payment on Sribu?",
+              "What payment methods does Sribu accept?",
+              "What options do I have for paying on Sribu?"
+          ],
+          "answers": [
+              "Sribu accepts various payment methods, including bank transfer, Virtual Account, credit card, PayPal, and others. Choose the one that suits you best during checkout."
+          ]
+      },
+      {
+          "intent": "faq.dissatisfied_with_work",
+          "utterances": [
+              "What if I'm not satisfied with the work?",
+              "What should I do if the work is unsatisfactory?",
+              "If I'm unhappy with the result, what can I do?",
+              "What happens if the work doesn't meet my expectations?",
+              "What if I'm not happy with the result?",
+              "What can I do if the work is not up to standard?",
+              "What if the freelancer's work isn't satisfactory?",
+              "Steps to take if I'm unhappy with the work?",
+              "What actions can I take if the work is not as expected?",
+              "How to handle dissatisfaction with the work?"
+          ],
+          "answers": [
+              "If you are not satisfied, you can request revisions from the seller. Sribu also provides a Resolution Center to assist in mediating disputes."
+          ]
+      },
+      {
+          "intent": "faq.how_to_leave_review",
+          "utterances": [
+              "How do I leave a review for a freelancer?",
+              "How to write a review on Sribu?",
+              "How can I give a review for a freelancer?",
+              "How to rate a freelancer on Sribu?",
+              "How to provide feedback for a freelancer on Sribu?",
+              "How do I write a review for a freelancer?",
+              "Steps to leave a review on Sribu?",
+              "How can I leave a testimonial on Sribu?",
+              "Can you explain how to leave a review on Sribu?",
+              "How do I rate a freelancer on Sribu?"
+          ],
+          "answers": [
+              "Once the order is completed, you can leave a review and rate the seller's service. Your review helps other clients make better decisions."
+          ]
+      },
+      {
+          "intent": "faq.how_to_start_as_client",
+          "utterances": [
+              "How do I start as a client?",
+              "How to become a client on Sribu?",
+              "How can I start using Sribu?",
+              "What are the steps to start as a client on Sribu?",
+              "What should I do to get started as a client on Sribu?",
+              "How do I register on Sribu?",
+              "How can I start looking for services on Sribu?",
+              "What's the process to begin as a client on Sribu?",
+              "What do I need to do to get started on Sribu?",
+              "How do I become a client on Sribu?"
+          ],
+          "answers": [
+              "To start, simply sign up for a free Sribu account. Once registered, you can browse services, contact sellers, and place orders."
+          ]
+      },
+      {
+          "intent": "faq.how_to_communicate_with_freelancer",
+          "utterances": [
+              "How do I communicate with freelancers?",
+              "How to chat with freelancers on Sribu?",
+              "How can I talk to freelancers?",
+              "What's the way to communicate with sellers on Sribu?",
+              "How can I contact freelancers on Sribu?",
+              "How to reach out to freelancers on Sribu?",
+              "How to use the chat feature on Sribu?",
+              "Steps to communicate with freelancers on Sribu?",
+              "How can I discuss with freelancers on Sribu?",
+              "How to use the chat system on Sribu?"
+          ],
+          "answers": [
+              "You can communicate with freelancers through Sribu's chat system. Simply click on the seller's profile and use the 'Chat & Negotiate' button."
+          ]
+      },
+      {
+          "intent": "faq.payment_security",
+          "utterances": [
+              "Is my payment secure?",
+              "How secure is payment on Sribu?",
+              "Are transactions on Sribu safe?",
+              "Is Sribu safe for payments?",
+              "How secure are payments on Sribu?",
+              "Does Sribu offer secure payment methods?",
+              "How does Sribu ensure payment security?",
+              "Are transactions on Sribu guaranteed to be safe?",
+              "What makes the payment system secure on Sribu?",
+              "How can I be sure my payment is safe on Sribu?"
+          ],
+          "answers": [
+              "Yes, Sribu offers a secure payment system. Funds are held in escrow until the order is completed and approved by you."
+          ]
+      },
+      {
+          "intent": "faq.order_cancellation",
+          "utterances": [
+              "Can I cancel my order?",
+              "How do I cancel an order on Sribu?",
+              "How can I cancel my order?",
+              "What's the process to cancel an order on Sribu?",
+              "Is it possible to cancel an order on Sribu?",
+              "Can I cancel an order on Sribu?",
+              "Steps to cancel an order on Sribu?",
+              "How does the order cancellation process work on Sribu?",
+              "Can I request an order cancellation on Sribu?",
+              "What do I need to do to cancel my order on Sribu?"
+          ],
+          "answers": [
+              "Yes, you can request to cancel an order if necessary. However, it's important to review the seller's cancellation policy before doing so."
+          ]
+      },
+      {
+          "intent": "faq.usage_fees",
+          "utterances": [
+              "Are there any fees for using Sribu?",
+              "What fees are charged on Sribu?",
+              "Is Sribu free or paid?",
+              "Are there any costs for using Sribu?",
+              "What are the usage fees on Sribu?",
+              "Are there any additional fees on Sribu?",
+              "What's the fee structure on Sribu?",
+              "Are there subscription fees for Sribu?",
+              "What fees does Sribu charge?",
+              "Are there any hidden fees on Sribu?"
+          ],
+          "answers": [
+              "Joining Sribu and browsing services is free. However, there might be service fees associated with orders. Check the 'Pricing' section for more details."
+          ]
+      }
+  ]
+}

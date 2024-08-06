@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "node src/app.js"
+  },
   "dependencies": {
     "@nlpjs/basic": "^4.27.0",
     "@nlpjs/lang-id": "^4.26.1",
+    "cors": "^2.8.5",
     "express": "^4.19.2",
     "languagedetect": "^2.0.0",
     "node-nlp": "^4.27.0"

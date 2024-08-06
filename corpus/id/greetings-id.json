@@ -2,7 +2,7 @@
     "intents": [
       {
         "intent": "greetings",
-        "examples": [
+        "utterances": [
           "Halo",
           "Hai",
           "Selamat pagi",
@@ -12,7 +12,7 @@
           "Apa kabar?",
           "Apa yang sedang terjadi?"
         ],
-        "responses": [
+        "answers": [
           "Halo! Bagaimana saya bisa membantu Anda hari ini?",
           "Hai! Apa yang bisa saya bantu?",
           "Hai! Bagaimana saya bisa membantu Anda?",
